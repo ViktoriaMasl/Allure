@@ -131,6 +131,6 @@ public class DataChangeTest {
         $(withText("Запланировать")).click();
         $(withText("Успешно!")).shouldBe(Condition.visible, Duration.ofMillis(15000));
         $(withText("Запланировать")).click();
-        $(withText("У вас уже запланирована встреча на эту дату. Перепланировать?")).shouldBe(Condition.visible);
+        $(withText("У вас уже запланирована встреча на эту дату")).shouldBe(Condition.visible);
     }
 }
